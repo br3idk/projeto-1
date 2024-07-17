@@ -1,0 +1,40 @@
+terminal:
+
+cd = change directory (navega entre pastas)
+mkdir = make directory (cria uma pasta)
+rm = remove (remove um arquivo)
+mv = move (move ou renomeia arquivos)
+touch (cria arquivos)
+ls = list (lista os arquivos do diretoria atual)
+
+git:
+
+nano <nome do arquivo> (tenho que pesquisar, mas é um editor de texto pra terminal)
+cat  <nome do arquivo> (mostra o que tem dentro do arquivo)
+ls -a (mosta o diretorio .git)
+git init (inicia um repositorio)
+git add <nome> pra deixar os arquivos em modo de estágio (1 passo antes de comitar)
+git rm --cached <nome> para tirar do modo de estágio
+git commit -m "mensagem" (comita e coloca uma mensagem)
+git log (mostra historico de commits)
+git log --oneline (forma resumida dos historico)
+
+//checando, revertendo e deletando commits:
+
+git checkout <commit-id> (volta para como estava o código [apenas para analisar])
+git checkout master (volta ao último ponto em que estava)
+git revert <commit-id> (apaga a mudança do id commitado, mas não o apaga do histórico)
+//vai aparecer uma tela com um comentário, é só escrever o comando ":q" e dar ENTER
+git reset <commit-id> (apaga tudo feito depois daquele ID, mas as mudanças permanecem)
+git reset <commit-id> --hard (apaga tudo feito depois daquele ID)
+
+//ignorando arquivos
+basta criar um arquivo chamado .gitignore e escrever o nome do arquivo que tem que ser ignorando lá dentro
+
+//criando branches
+git branch (lista as branches)
+git branch <nome> (cria uma branch)
+git checkout <nome da branch> (vai para a branch desejada)
+git branch -d <nome> (talvez não delete se vc não commitar, se quiser deletar mesmo assim, coloque o "d" maiúsculo)
+
+git merge <nome da branch> (PRECISA ESTAR NA BRANCH DE DESTINO PARA EXECUTAR)
