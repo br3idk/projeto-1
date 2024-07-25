@@ -41,8 +41,9 @@ git branch -d <nome> (talvez não delete se vc não commitar, se quiser deletar 
 git merge <nome da branch> (PRECISA ESTAR NA BRANCH DE DESTINO PARA EXECUTAR)
 
 //push e pull pro github
+git remote add origin <URL-DO-REPOSITORIO>
 git push origin <link-do-repositorio> (referencia onde sera o push main)
 git remote -v (mostra o origin)
 git clone <link> <caso vc queira renomear o nome do projeto> (clona um repositorio existente do github)
-git PUSH origin main (envia alterações do repositório local para o remoto)
-git PULL origin main (traz o repositório remoto para o local)
+git push origin main (envia alterações do repositório local para o remoto)
+git pull origin main (traz o repositório remoto para o local)
